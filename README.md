@@ -1,4 +1,4 @@
-# Steps to generate the issue
+# Steps to create the issue
 
 ## Install
 
@@ -8,9 +8,9 @@ Install all dependencies;
 npm install
 ```
 
-## Up the server
+## Start the server
 
-Up the server on localhost:8080;
+Start the server on localhost:8080;
 
 ```sh
 npm run serve
@@ -18,7 +18,7 @@ npm run serve
 
 ## Find the error
 
-After that, your default browser will be opened with these errors;
+After that, your default browser will open with these errors;
 
 ```txt
 TS1479: The current file is a CommonJS module whose imports will produce
@@ -29,13 +29,13 @@ To convert this file to an ECMAScript module, add the field
 `"type": "module"` to '/path/to/headlessui-checking-error/package.json'.
 ```
 
-## Down the server
+## Shut down the server
 
-Down the server with `ctrl-c`;
+Shut down the server with `ctrl-c`;
 
-## To fix this issue
+## To fix this problem
 
-If we want to fix that error, it seems to need to delete the following
+If we want to fix this, it seems we need to delete the following
 line from `./node_modules/@headlessui/react/package.json`
 
 ```json
